@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Encriptador de Texto</title>
 </head>
 <body>
-    
+    <!-- Encabezado -->
+    <header>
+        <a href="#" rel="">
+            <img src="./images/Logo.png" alt="Logo Alura" class="logo">
+        </a>    
+    </header>
+
+    <!-- Principal -->
+    <main>
+        <section class="encriptador">
+            <textarea class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encriptador-aviso">
+                <img src="./images/bi_exclamation-circle-fill.png" alt="Imagen Aviso" class="img-aviso">
+                <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="encriptador-contenedor">
+                <button type="submit" class="btn-encriptar" onclick="btnEncriptar.addEventListener()">Encriptar</button>
+                <button type="submit" class="btn-desencriptar" onclick="btnDesencriptar.addEventListener()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="tarjeta">
+           <div class="tarjeta-contenedor">
+                <img src="./images/Muñeco.png" alt="Imagen Muñeco" class="img-muñeco">
+                <p class="texto-uno">Ningún mensaje fue encontrado</p>
+                <p class="texto-dos">Ingrese el texto que deseas encriptar o desencriptar</p>
+           </div>
+           <textarea type="mensaje" class="evaluar" readonly></textarea>
+           <button type="submit" class="btn-copiar" onclick="btnCopiar.addEventListener()">Copiar</button>
+         </section>  
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p class="copyright">Encriptador de Texto - Desarrollado por R. Dario Jaimez y Alura Latam junto a ONE</p>
+        <a href="https://www.linkedin.com/in/ruben-dario-jaimez" rel="">
+            <img src="./images/linkedin.svg" alt="Logo Linkedin" class="linked">
+        </a>
+        <a href="https://www.github.com/dariojaimez" rel="">
+            <img src="./images/github.svg" alt="Logo Github" class="git">
+        </a>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
